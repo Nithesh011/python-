@@ -1,3 +1,14 @@
+def twosum(n,target):
+    for i in range(len(n)):
+        for j in range(i+1,len(n)):
+            if target==n[i]+n[j]:
+                return ([i,j])
+                break
+target=4
+n=[1,2,3,5,6,8]
+print(twosum(n,target))
+--------------------------------------------------------------------OR-----------------------------------------------------------------------------------------------------------------------------
+
 def twosum(num,target):
     dict={}
     for i,j in enumerate(num):
