@@ -6,13 +6,9 @@ def word_count(str1):
             j[i] += 1
         else:
             j[i] = 1
-    print(j)
-    for i, r in j.items():
-        print(i, r)
-    y = next(iter(j))
-    print(y)
+    return j
 
 
-# Example usage
 str1 = "aaa bbb ccc aaa ddd ccc aaa"
-word_count(str1)
+counts = word_count(str1)
+print(counts)
