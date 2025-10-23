@@ -1,5 +1,5 @@
 def find_prime(n:int):
-    if n < 1:
+    if n <= 1:
         return f"Please enter the natural number to check prime"
     i=2
     while i*i <= n:
